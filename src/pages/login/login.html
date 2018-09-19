@@ -1,0 +1,36 @@
+ <ion-header>
+     <ion-navbar>
+         <ion-title>Login</ion-title>
+     </ion-navbar>
+ </ion-header>
+<ion-content class="noscroll" padding>
+    <ion-input value='+91' id="country_code"></ion-input>
+    <ion-input type="text" placeholder="phone number" id="phone_number"></ion-input>
+    <button ion-button (click)="smsLogin();">Login via SMS</button>
+    
+    <!--
+    <ion-item>
+        <ion-label color="primary" stacked>Username</ion-label>
+        <ion-input type="text" placeholder="Email or Phone" [(ngModel)]="username"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label color="primary" stacked>Password</ion-label>
+        <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <button ion-button block (click)="login()">Login</button>
+    -->
+</ion-content>
+
+<!---
+
+
+<input value="+1" id="country_code" />
+<input placeholder="phone number" id="phone_number"/>
+<button onclick="smsLogin();">Login via SMS</button>
+<div>OR</div>
+<input placeholder="email" id="email"/>
+<button onclick="emailLogin();">Login via Email</button>
+
+    
+-->

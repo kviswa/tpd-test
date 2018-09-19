@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar color="primary">
+     <ion-title>new plan</ion-title>
+     <ion-buttons end>
+ 
+       <button ion-button icon-only (click)="onSave()" [disabled]="!f.valid">
+         <ion-icon name="checkmark"></ion-icon>
+       </button>
+     </ion-buttons>
+   </ion-navbar>
+ </ion-header>
+ <ion-content padding>
+   <form #f="ngForm">
+    
+    <ion-list inset lines="none">
+    <ion-list-header>Enter</ion-list-header>
+     <ion-item>
+       <ion-label stacked >My dream title</ion-label>
+       <ion-input type="text" [(ngModel)]="todoItem.title" name="title" required></ion-input>
+     </ion-item>
+         <ion-item>
+       <ion-label   stacked>Type</ion-label>
+       <ion-input type="text" [(ngModel)]="todoItem.category" name="intro"></ion-input>
+     </ion-item>
+     <ion-item>
+       <ion-label  stacked>Description</ion-label>
+       <ion-textarea type="text" [(ngModel)]="todoItem.detail" name="detail" required></ion-textarea>
+     </ion-item>
+     <ion-item>
+       <ion-label stacked >To complete by:</ion-label>
+       <ion-datetime   [(ngModel)]="todoItem.date" name="date" required></ion-datetime>
+     </ion-item>
+ 
+    </ion-list>
+   </form>
+ </ion-content>

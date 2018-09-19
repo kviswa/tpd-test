@@ -14,3 +14,41 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+@font-face {
+    font-family: Cormorant;
+    font-weight: 600;
+    src: url('../assets/fonts/Cormorant.woff2') format('woff2');
+}
+
+*{
+    font-family: opensans;
+}
+
+@font-face {
+    font-family: opensans;
+    font-weight: 600;
+    src: url('../assets/fonts/opensans.woff2') format('woff2');
+}
+
+*{
+    font-family: opensans;
+}
+
+@font-face {
+    font-family: cinzel-deco;
+    font-weight: bolder;
+    src: url('../assets/fonts/cinzel-deco.woff2') format('woff2');
+}
+
+*{
+    font-family: cinzel-deco;
+}
+@font-face {
+    font-family: cinzel;
+    font-weight: bold;
+    src: url('../assets/fonts/cinzel.woff2') format('woff2');
+}
+
+*{
+    font-family: cinzel;
+}

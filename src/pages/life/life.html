@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="dreamyellow">
+    <ion-title>list</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-list inset>
+	 <ion-list-header>Today</ion-list-header>
+ 	<button ion-item *ngFor='let todo of todoList' 	(click)="onItemClick(todo)">
+		<ion-avatar item-start>
+			<img src="">
+		</ion-avatar>
+		 <h3>{{todo.category}}</h3>
+			<ion-note item-end >{{ todo.date | date}}</ion-note>
+			<p>{{todo.title}}</p>
+ 	</button>
+ </ion-list>
+ <ion-fab right bottom>
+ 	<button ion-fab mini color="danger" (click)="onAddClick()">
+ 		<ion-icon name="add"></ion-icon>
+ 	</button>
+ </ion-fab>
+ mixpanel.track("View items");
+</ion-content>
